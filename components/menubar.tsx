@@ -10,7 +10,6 @@ import {
 import { ArrowRightCircle, Download, Menu } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
-import { Separator } from "./ui/separator";
 import SocialIcon from "./social-icon";
 import { Button } from "./ui/button";
 

@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
+import Image from "next/image";
 
 const projects = [
   {
@@ -72,7 +73,9 @@ const Project: React.FC = () => {
               whileHover={{ y: -10, transition: { duration: 0.2 } }}
             >
               <div className="relative h-48 overflow-hidden">
-                <img
+                <Image
+                  width={100}
+                  height={100}
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
