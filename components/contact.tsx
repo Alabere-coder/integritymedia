@@ -30,11 +30,11 @@ const Contact = () => {
                 <div className="flex items-center space-x-4">
                   <Link
                     href="https://github.com/alabere-coder"
-                    className="bg-primary/10 p-3 rounded-full hover:border-2 hover:border-[#9b87f5]"
+                    className="bg-gray-100 p-3 rounded-full hover:border-2 hover:border-[#9b87f5]"
                   >
                     <Github className="w-5 h-5 text-[#9b87f5]" />
                   </Link>
-                  <div>
+                  <div className="flex flex-col items-start">
                     <p className="text-sm text-muted-foreground">GitHub</p>
                     <p className="font-medium">@Alabere-coder</p>
                   </div>
@@ -42,31 +42,31 @@ const Contact = () => {
                 <div className="flex items-center space-x-4">
                   <Link
                     href="https://www.linkedin.com/in/abdulazeez-isiaq"
-                    className="bg-primary/10 p-3 rounded-full hover:border-2 hover:border-[#9b87f5]"
+                    className="bg-gray-100 p-3 rounded-full hover:border-2 hover:border-[#9b87f5]"
                   >
                     <Linkedin className="w-5 h-5 text-[#9b87f5]" />
                   </Link>
-                  <div>
+                  <div className="flex flex-col items-start">
                     <p className="text-sm text-muted-foreground">LinkedIn</p>
                     <p className="font-medium">@abdulazeez-isiaq</p>
                   </div>
                 </div>
 
                 <div className="flex items-center space-x-4">
-                  <div className="bg-primary/10 p-3 rounded-full">
+                  <div className="bg-gray-100 p-3 rounded-full">
                     <Mail className="w-5 h-5 text-primary" />
                   </div>
-                  <div>
+                  <div className="flex flex-col items-start">
                     <p className="text-sm text-muted-foreground">Email</p>
                     <p className="font-medium">integritymedias@gmail.com</p>
                   </div>
                 </div>
                 <Separator />
                 <div className="flex items-center space-x-4">
-                  <div className="bg-primary/10 p-3 rounded-full">
+                  <div className="bg-gray-100 p-3 rounded-full">
                     <MessageSquare className="w-5 h-5 text-primary" />
                   </div>
-                  <div>
+                  <div className="flex flex-col items-start">
                     <p className="text-sm text-muted-foreground">Message</p>
                     <p className="font-medium">
                       Send me a message and I'll get back to you.
