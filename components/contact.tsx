@@ -4,12 +4,11 @@ import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, MessageSquare } from "lucide-react";
 import { Separator } from "./ui/separator";
 import Link from "next/link";
-import { Input } from "./ui/input";
 
 const Contact = () => {
   return (
     <section className="py-20 w-full bg-neutral-200" id="contact">
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
@@ -17,15 +16,39 @@ const Contact = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="font-display text-3xl md:text-4xl font-bold mb-8 text-neutral-800">
+          {/* <h2 className="font-display text-3xl md:text-4xl font-bold mb-8 text-neutral-800">
             Get in Touch
-          </h2>
+          </h2> */}
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8 }}
+          >
+            <span className="block text-sm uppercase tracking-wider text-muted-foreground mb-2">
+              Get in Touch
+            </span>
+            <h2 className="text-3xl md:text-4xl font-light mb-6">Contact Me</h2>
+            <p className="text-muted-foreground max-w-3xl mx-auto">
+              Have a project in mind or want to discuss collaboration
+              opportunities? Feel free to reach out!
+            </p>
+          </motion.div>
           <div className="flex flex-col md:flex-row gap-8 items-start">
             <div className="flex-1">
-              <p className="text-neutral-600 mb-6">
+              {/* <p className="text-neutral-600 mb-6">
                 Interested in working together? Let's discuss your project and
                 see how I can help.
+              </p> */}
+              <h3 className="text-2xl font-light mb-2 text-start">
+                Let's talk about your project
+              </h3>
+              <p className="text-muted-foreground mb-4 text-start">
+                I'm interested in freelance opportunities. However, if you have
+                other requests or questions, don't hesitate to contact me.
               </p>
+
               <div className="space-y-4">
                 <div className="flex items-center space-x-4">
                   <Link
@@ -76,7 +99,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <form className="flex-1 glass-card p-6 rounded-xl w-full space-y-4">
+            <form className="flex-1 glass-card p-6 rounded-xl w-full space-y-6">
               <input
                 type="text"
                 placeholder="Name"
