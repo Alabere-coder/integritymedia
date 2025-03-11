@@ -79,7 +79,7 @@ const Skills: React.FC = () => {
                     </div>
                     <div className="h-2 bg-secondary rounded-full overflow-hidden">
                       <motion.div
-                        className="h-full bg-primary"
+                        className="h-full bg-[#9b87f5]"
                         initial={{ width: 0 }}
                         whileInView={{ width: `${skill.level}%` }}
                         viewport={{ once: true, margin: "-100px" }}

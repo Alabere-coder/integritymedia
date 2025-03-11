@@ -45,10 +45,10 @@ const BackToTopButton: React.FC = () => {
             onClick={scrollToTop}
             variant="default"
             size="icon"
-            className="rounded-full shadow-lg h-12 w-12 bg-primary/90 hover:bg-primary"
+            className="rounded-full shadow-lg h-12 w-12 bg-[#9b87f5] hover:bg-[#9b87f5]/90"
             aria-label="Back to top"
           >
-            <ChevronUp className="h-6 w-6" />
+            <ChevronUp className="h-6 w-6 font-black" />
           </Button>
         </motion.div>
       )}

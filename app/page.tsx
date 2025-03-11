@@ -20,7 +20,6 @@ export default function Home() {
     setIsLoading(false);
   };
 
-  // Prevent scrolling during loading
   useEffect(() => {
     if (isLoading) {
       document.body.style.overflow = "hidden";

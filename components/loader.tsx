@@ -33,7 +33,7 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onLoadingComplete }) => {
 
   return (
     <motion.div
-      className="fixed inset-0 flex flex-col items-center justify-center bg-neutral-100 z-50"
+      className="fixed inset-0 flex flex-col items-center justify-center bg-neutral-50 z-50"
       initial={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5, ease: "easeInOut" }}

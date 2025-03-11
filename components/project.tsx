@@ -10,8 +10,7 @@ const projects = [
     title: "AI-Powered Dashboard",
     description:
       "A comprehensive dashboard with AI-driven analytics for business intelligence.",
-    image:
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+    image: "/portf-img1.jpg",
     tags: ["React", "TypeScript", "TensorFlow.js", "Tailwind CSS"],
     liveLink: "#",
     githubLink: "#",
@@ -20,8 +19,7 @@ const projects = [
     title: "E-commerce Platform",
     description:
       "Modern e-commerce solution with personalized product recommendations.",
-    image:
-      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80",
+    image: "/port3.jpeg",
     tags: ["Next.js", "Node.js", "MongoDB", "Machine Learning"],
     liveLink: "#",
     githubLink: "#",
@@ -30,8 +28,7 @@ const projects = [
     title: "Content Management System",
     description:
       "Custom CMS with intuitive interface and advanced content organization.",
-    image:
-      "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
+    image: "/port2.jpeg",
     tags: ["Vue.js", "GraphQL", "PostgreSQL", "AWS"],
     liveLink: "#",
     githubLink: "#",

@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
               aria-label="GitHub"
             >
-              <Github size={20} />
+              <Github size={20} className="text-[#9b87f5]" />
             </motion.a>
 
             <motion.a
@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
               aria-label="LinkedIn"
             >
-              <Linkedin size={20} />
+              <Linkedin size={20} className="text-[#9b87f5]" />
             </motion.a>
 
             <motion.a
@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
               aria-label="Twitter"
             >
-              <Twitter size={20} />
+              <Twitter size={20} className="text-[#9b87f5]" />
             </motion.a>
           </motion.div>
 

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, MessageSquare } from "lucide-react";
 import { Separator } from "./ui/separator";
+import Link from "next/link";
 
 const Contact = () => {
   return (
@@ -25,31 +26,38 @@ const Contact = () => {
               </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-4">
+                  <Link
+                    href="https://github.com/alabere-coder"
+                    className="bg-primary/10 p-3 rounded-full hover:border-2 hover:border-[#9b87f5]"
+                  >
+                    <Github className="w-5 h-5 text-[#9b87f5]" />
+                  </Link>
+                  <div>
+                    <p className="text-sm text-muted-foreground">GitHub</p>
+                    <p className="font-medium">@Alabere-coder</p>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-4">
+                  <Link
+                    href="https://www.linkedin.com/in/abdulazeez-isiaq"
+                    className="bg-primary/10 p-3 rounded-full hover:border-2 hover:border-[#9b87f5]"
+                  >
+                    <Linkedin className="w-5 h-5 text-[#9b87f5]" />
+                  </Link>
+                  <div>
+                    <p className="text-sm text-muted-foreground">LinkedIn</p>
+                    <p className="font-medium">@abdulazeez-isiaq</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center space-x-4">
                   <div className="bg-primary/10 p-3 rounded-full">
                     <Mail className="w-5 h-5 text-primary" />
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
-                    <p className="font-medium">integritymedias@gmail.com.com</p>
+                    <p className="font-medium">integritymedias@gmail.com</p>
                   </div>
-                </div>
-                <div className="flex gap-4">
-                  <a
-                    href="https://github.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-neutral-600 hover:text-[#9b87f5] transition-colors"
-                  >
-                    <Github className="w-6 h-6" />
-                  </a>
-                  <a
-                    href="https://linkedin.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-neutral-600 hover:text-[#9b87f5] transition-colors"
-                  >
-                    <Linkedin className="w-6 h-6" />
-                  </a>
                 </div>
                 <Separator />
                 <div className="flex items-center space-x-4">
