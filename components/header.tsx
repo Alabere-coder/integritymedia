@@ -75,7 +75,7 @@ const Header = () => {
         </div>
       </div>
       <motion.div
-        className="pt-12"
+        className="pt-8"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
