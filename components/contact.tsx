@@ -91,7 +91,7 @@ const Contact = () => {
                   </div>
                   <div className="flex flex-col items-start">
                     <p className="text-sm text-muted-foreground">Message</p>
-                    <p className="font-medium">
+                    <p className="font-medium text-start">
                       Send me a message and I'll get back to you.
                     </p>
                   </div>

@@ -9,7 +9,7 @@ import { ArrowDown } from "lucide-react";
 
 const Header = () => {
   return (
-    <div className="w-full h-screen max-sm:-mt-10 bg-neutral-200 flex flex-col items-center justify-center">
+    <div className="w-full h-screen bg-neutral-200 flex flex-col items-center justify-center">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
