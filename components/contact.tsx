@@ -4,16 +4,18 @@ import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, MessageSquare } from "lucide-react";
 import { Separator } from "./ui/separator";
 import Link from "next/link";
+import { Input } from "./ui/input";
 
 const Contact = () => {
   return (
     <section className="py-20 w-full bg-neutral-200" id="contact">
       <div className="max-w-5xl mx-auto px-6">
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
         >
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-8 text-neutral-800">
             Get in Touch
@@ -73,21 +75,23 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <form className="flex-1 w-full space-y-4">
+
+            <form className="flex-1 glass-card p-6 rounded-xl w-full space-y-4">
               <input
                 type="text"
                 placeholder="Name"
-                className="w-full px-4 py-2 rounded-lg border border-neutral-300 focus:border-[#9b87f5] focus:ring-1 focus:ring-[#9b87f5] outline-none transition-colors"
+                className="w-full px-4 py-2 bg-background rounded-lg border border-neutral-300 focus:border-[#9b87f5] focus:ring-1 focus:ring-[#9b87f5] outline-none transition-colors"
               />
+
               <input
                 type="email"
                 placeholder="Email"
-                className="w-full px-4 py-2 rounded-lg border border-neutral-300 focus:border-[#9b87f5] focus:ring-1 focus:ring-[#9b87f5] outline-none transition-colors"
+                className="w-full px-4 py-2 bg-background rounded-lg border border-neutral-300 focus:border-[#9b87f5] focus:ring-1 focus:ring-[#9b87f5] outline-none transition-colors"
               />
               <textarea
                 placeholder="Message"
                 rows={4}
-                className="w-full px-4 py-2 rounded-lg border border-neutral-300 focus:border-[#9b87f5] focus:ring-1 focus:ring-[#9b87f5] outline-none transition-colors"
+                className="w-full px-4 py-2 bg-background rounded-lg border border-neutral-300 focus:border-[#9b87f5] focus:ring-1 focus:ring-[#9b87f5] outline-none transition-colors"
               ></textarea>
               <button
                 type="submit"

@@ -11,11 +11,15 @@ const Header = () => {
   return (
     <div className="w-full h-screen max-sm:-mt-10 bg-neutral-200 flex flex-col items-center justify-center">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.9 }}
       >
-        <div className="flex flex-row h-fit w-full">
+        <motion.div
+          whileHover={{ scale: 1.15 }}
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          className="flex flex-row h-fit w-full"
+        >
           <div className="flex justify-center items-center border-4 border-[#9b87f5] rounded-lg text-center max-md:w-32 max-md:h-32 w-40 h-40">
             <Image
               src="/work.jpg"
@@ -25,7 +29,7 @@ const Header = () => {
               className="w-full h-full rounded-lg"
             />
           </div>
-        </div>
+        </motion.div>
       </motion.div>
       <div className="max-w-full flex flex-col">
         <div className="max-w-5xl mt-2 mx-auto text-center">
