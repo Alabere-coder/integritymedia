@@ -75,7 +75,7 @@ const Header = () => {
         </div>
       </div>
       <motion.div
-        className="absolute bottom-6 left-1/2 transform -translate-x-1/2"
+        className="pt-12"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{

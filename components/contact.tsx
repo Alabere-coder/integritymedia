@@ -16,9 +16,6 @@ const Contact = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
         >
-          {/* <h2 className="font-display text-3xl md:text-4xl font-bold mb-8 text-neutral-800">
-            Get in Touch
-          </h2> */}
           <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 20 }}
@@ -37,10 +34,6 @@ const Contact = () => {
           </motion.div>
           <div className="flex flex-col md:flex-row gap-8 items-start">
             <div className="flex-1">
-              {/* <p className="text-neutral-600 mb-6">
-                Interested in working together? Let's discuss your project and
-                see how I can help.
-              </p> */}
               <h3 className="text-2xl font-light mb-2 text-start">
                 Let's talk about your project
               </h3>
