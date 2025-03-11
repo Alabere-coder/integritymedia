@@ -12,6 +12,7 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import BackToTopButton from "@/components/goto";
 import Skills from "@/components/skills";
+import CurrentProject from "@/components/current-project";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -47,6 +48,7 @@ export default function Home() {
             <Popup />
             <About />
             <Project />
+            <CurrentProject />
             <Skills />
             <Contact />
           </main>
