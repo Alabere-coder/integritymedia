@@ -13,7 +13,7 @@ const projects = [
       "OpenAI Dall-E is an AI system that can create realistic images and art from a description in natural language.",
     image: "/portf-img1.jpg",
     tags: ["Next.js", "TypeScript", "OpenAi", "Tailwind CSS", "Framer Motion"],
-    liveLink: "/",
+    liveLink: "https://image-generator-xi-ten.vercel.app/",
     githubLink: "https://github.com/Alabere-coder/image-generator",
   },
   {
@@ -28,7 +28,7 @@ const projects = [
       "Tailwind Css",
       "Framer Motion",
     ],
-    liveLink: "/",
+    liveLink: "https://agenda-bice-alpha.vercel.app/",
     githubLink: "https://github.com/Alabere-coder/agenda",
   },
   {
