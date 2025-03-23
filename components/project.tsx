@@ -4,25 +4,32 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const projects = [
   {
-    title: "AI-Powered Dashboard",
+    title: "AI-Powered Image Generator",
     description:
-      "A comprehensive dashboard with AI-driven analytics for business intelligence.",
+      "OpenAI Dall-E is an AI system that can create realistic images and art from a description in natural language.",
     image: "/portf-img1.jpg",
-    tags: ["React", "TypeScript", "TensorFlow.js", "Tailwind CSS"],
-    liveLink: "#",
-    githubLink: "#",
+    tags: ["Next.js", "TypeScript", "OpenAi", "Tailwind CSS", "Framer Motion"],
+    liveLink: "/",
+    githubLink: "https://github.com/Alabere-coder/image-generator",
   },
   {
-    title: "E-commerce Platform",
+    title: "Agenda",
     description:
-      "Modern e-commerce solution with personalized product recommendations.",
+      "Agenda is a task management app to help you stay organized and manage your daily activities.",
     image: "/port3.jpeg",
-    tags: ["Next.js", "Node.js", "MongoDB", "Machine Learning"],
-    liveLink: "#",
-    githubLink: "#",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Firebase",
+      "Tailwind Css",
+      "Framer Motion",
+    ],
+    liveLink: "/",
+    githubLink: "https://github.com/Alabere-coder/agenda",
   },
   {
     title: "Content Management System",
@@ -30,8 +37,8 @@ const projects = [
       "Custom CMS with intuitive interface and advanced content organization.",
     image: "/port2.jpeg",
     tags: ["Vue.js", "GraphQL", "PostgreSQL", "AWS"],
-    liveLink: "#",
-    githubLink: "#",
+    liveLink: "/",
+    githubLink: "/",
   },
 ];
 
@@ -98,7 +105,7 @@ const Project: React.FC = () => {
                 </div>
 
                 <div className="flex space-x-4">
-                  <a
+                  <Link
                     href={project.liveLink}
                     className="flex items-center space-x-1 text-sm text-[#9b87f5] hover:text-[#9b87f5]/80 transition-colors"
                     target="_blank"
@@ -106,8 +113,8 @@ const Project: React.FC = () => {
                   >
                     <ExternalLink size={16} />
                     <span>Live Demo</span>
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href={project.githubLink}
                     className="flex items-center space-x-1 text-sm text-[#9b87f5] hover:text-[#9b87f5]/80 transition-colors"
                     target="_blank"
@@ -115,7 +122,7 @@ const Project: React.FC = () => {
                   >
                     <Github size={16} />
                     <span>GitHub</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </motion.div>

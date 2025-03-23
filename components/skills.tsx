@@ -1,34 +1,51 @@
 import React from "react";
 import { motion } from "framer-motion";
+import {
+  Code,
+  Cpu,
+  Database,
+  Globe,
+  Layers,
+  Palette,
+  Server,
+} from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 
-const skillCategories = [
+const skills = [
   {
-    title: "Frontend",
-    skills: [
-      { name: "React", level: 90 },
-      { name: "Next.js", level: 85 },
-      { name: "TypeScript", level: 80 },
-      { name: "Tailwind CSS", level: 95 },
-      { name: "React Native", level: 75 },
-    ],
+    category: "Frontend",
+    icon: <Code className="text-[#9b87f5]" />,
+    items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Redux"],
   },
   {
-    title: "Backend",
-    skills: [
-      { name: "Node.js", level: 80 },
-      { name: "Express", level: 75 },
-      { name: "GraphQL", level: 70 },
-      { name: "RESTful APIs", level: 85 },
-    ],
+    category: "AI & ML",
+    icon: <Cpu className="text-[#9b87f5]" />,
+    items: ["TensorFlow", "PyTorch", "Scikit-learn", "LangChain", "OpenAI"],
   },
   {
-    title: "AI/ML",
-    skills: [
-      { name: "TensorFlow.js", level: 70 },
-      { name: "Machine Learning", level: 75 },
-      { name: "Natural Language Processing", level: 65 },
-      { name: "Data Visualization", level: 80 },
-    ],
+    category: "Backend",
+    icon: <Server className="text-[#9b87f5]" />,
+    items: ["Node.js", "Express", "Python", "FastAPI", "GraphQL"],
+  },
+  {
+    category: "Data",
+    icon: <Database className="text-[#9b87f5]" />,
+    items: ["MongoDB", "PostgreSQL", "Firebase", "Supabase", "Redis"],
+  },
+  {
+    category: "DevOps",
+    icon: <Layers className="text-[#9b87f5]" />,
+    items: ["Docker", "AWS", "CI/CD", "Vercel", "GitHub Actions"],
+  },
+  {
+    category: "Design",
+    icon: <Palette className="text-[#9b87f5]" />,
+    items: ["Figma", "Adobe XD", "UI/UX", "Responsive Design", "Animations"],
+  },
+  {
+    category: "Languages",
+    icon: <Globe className="text-[#9b87f5]" />,
+    items: ["JavaScript", "TypeScript", "Python", "HTML/CSS", "SQL"],
   },
 ];
 
@@ -55,43 +72,36 @@ const Skills: React.FC = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-          {skillCategories.map((category, categoryIndex) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {skills.map((skill, index) => (
             <motion.div
-              key={categoryIndex}
-              className="glass-card p-6 rounded-xl"
+              key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.5, delay: categoryIndex * 0.1 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <h3 className="text-xl font-medium mb-6 text-center">
-                {category.title}
-              </h3>
-              <div className="space-y-6">
-                {category.skills.map((skill, skillIndex) => (
-                  <div key={skillIndex}>
-                    <div className="flex justify-between mb-2">
-                      <span>{skill.name}</span>
-                      <span className="text-sm text-muted-foreground">
-                        {skill.level}%
-                      </span>
+              <Card key={index} className="overflow-hidden">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="p-2 rounded-md bg-primary/10 text-primary">
+                      {skill.icon}
                     </div>
-                    <div className="h-2 bg-secondary rounded-full overflow-hidden">
-                      <motion.div
-                        className="h-full bg-[#9b87f5]"
-                        initial={{ width: 0 }}
-                        whileInView={{ width: `${skill.level}%` }}
-                        viewport={{ once: true, margin: "-100px" }}
-                        transition={{
-                          duration: 1,
-                          delay: 0.2 + skillIndex * 0.1,
-                        }}
-                      />
-                    </div>
+                    <h3 className="font-semibold text-lg">{skill.category}</h3>
                   </div>
-                ))}
-              </div>
+                  <ul className="space-y-3">
+                    {skill.items.map((item, idx) => (
+                      <li
+                        key={idx}
+                        className="text-muted-foreground flex items-center gap-2"
+                      >
+                        <div className="w-1.5 h-1.5 rounded-full bg-primary"></div>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
             </motion.div>
           ))}
         </div>
