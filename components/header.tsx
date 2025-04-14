@@ -9,8 +9,8 @@ import { ArrowDown } from "lucide-react";
 
 const Header = () => {
   return (
-    <div className="w-full h-screen bg-neutral-200 flex flex-col items-center justify-center">
-      <motion.div
+    <div className="relative w-full h-screen flex flex-col items-center justify-center gap-10">
+      {/* <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9 }}
@@ -30,50 +30,109 @@ const Header = () => {
             />
           </div>
         </motion.div>
-      </motion.div>
-      <div className="max-w-full flex flex-col">
-        <div className="max-w-5xl mt-2 mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <div className="flex flex-col md:hidden">
-              <p className="text-[30px] font-semibold">Alabere</p>
-              <p className="text-[34px] font-semibold -mt-4">Abdulazeez I.</p>
-            </div>
-            <h1 className=" text-center max-md:hidden md:py-6 text-5xl font-bold text-neutral-700">
-              Alabere Abdulazeez I.
-            </h1>
+      </motion.div> */}
 
-            <h1 className="font-display text-5xl md:text-7xl font-bold mb-6 mt-4 text-neutral-700">
-              Frontend & AI Engineer
-            </h1>
-            <p className="text-neutral-500 text-lg md:text-xl max-w-2xl mx-auto mb-8">
-              Crafting beautiful user interfaces and building intelligent
-              systems
-            </p>
-            <div className="flex gap-4 justify-center">
-              <Link href="#contact">
-                <Button
-                  variant="secondary"
-                  className="bg-[#9b87f5] hover:bg-[#b4a4f7] text-white"
-                >
-                  Get in touch
-                </Button>
-              </Link>
-              <Link href="#projects">
-                <Button
-                  variant="secondary"
-                  className="border border-neutral-300 hover:border-[#9b87f5] text-neutral-700 rounded-lg transition-colors duration-200"
-                >
-                  View work
-                </Button>
-              </Link>
-            </div>
-          </motion.div>
+      <motion.div
+        className="absolute"
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 0.6 }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
+      >
+        <motion.div
+          className="max-sm:h-80 max-sm:w-80 h-96 w-96 rounded-full bg-[#9b87f5] blur-sm"
+          animate={{
+            scale: [1, 1.08, 1],
+          }}
+          transition={{
+            duration: 8,
+            repeat: Number.POSITIVE_INFINITY,
+            repeatType: "reverse",
+            ease: "easeInOut",
+          }}
+        />
+      </motion.div>
+
+      <motion.div
+        className="absolute"
+        initial={{ scale: 0.6, opacity: 0 }}
+        animate={{ scale: 1, opacity: 0.45 }}
+        transition={{ duration: 1.5, delay: 0.2, ease: "easeOut" }}
+      >
+        <motion.div
+          className="max-sm:h-64 max-sm:w-64 h-80 w-80 rounded-full bg-[#9b87f5] blur-xs"
+          animate={{
+            scale: [1, 1.06, 1],
+          }}
+          transition={{
+            duration: 6,
+            repeat: Number.POSITIVE_INFINITY,
+            repeatType: "reverse",
+            ease: "easeInOut",
+            delay: 0.5,
+          }}
+        />
+      </motion.div>
+
+      <motion.div
+        className="absolute"
+        initial={{ scale: 0.4, opacity: 0 }}
+        animate={{ scale: 1, opacity: 0.3 }}
+        transition={{ duration: 1.5, delay: 0.2, ease: "easeOut" }}
+      >
+        <motion.div
+          className="max-sm:h-48 max-sm:w-48 h-64 w-64 rounded-full bg-[#9b87f5]"
+          animate={{
+            scale: [1, 1.08, 1],
+          }}
+          transition={{
+            duration: 6,
+            repeat: Number.POSITIVE_INFINITY,
+            repeatType: "reverse",
+            ease: "easeInOut",
+            delay: 0.5,
+          }}
+        />
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="z-10 flex flex-col justify-center items-center gap-8 max-w-5xl text-center"
+      >
+        <div className="flex flex-col md:hidden">
+          <p className="text-[30px] font-semibold">Alabere</p>
+          <p className="text-[34px] font-semibold -mt-4">Abdulazeez I.</p>
         </div>
-      </div>
+        <h1 className=" text-center max-md:hidden md:py-6 text-5xl font-bold text-neutral-700">
+          Alabere Abdulazeez I.
+        </h1>
+
+        <h1 className="font-display text-5xl md:text-7xl font-bold text-neutral-700">
+          Frontend & AI Engineer
+        </h1>
+        <p className="text-neutral-500 text-lg md:text-xl max-w-2xl mx-auto mb-8">
+          Crafting beautiful user interfaces and building intelligent systems
+        </p>
+        <div className="flex gap-4 justify-center">
+          <Link href="#contact">
+            <Button
+              variant="secondary"
+              className="bg-[#9b87f5] hover:bg-[#b4a4f7] text-white"
+            >
+              Get in touch
+            </Button>
+          </Link>
+
+          <Button
+            variant="secondary"
+            className="border border-neutral-300 hover:border-[#9b87f5] text-neutral-700 rounded-lg transition-colors duration-200"
+          >
+            Download Resume
+          </Button>
+        </div>
+      </motion.div>
+
       <motion.div
         className="pt-8"
         initial={{ opacity: 0, y: -20 }}
@@ -86,10 +145,10 @@ const Header = () => {
           repeatDelay: 0.5,
         }}
       >
-        <a href="#about" className="flex flex-col items-center text-sm">
-          <span className="mb-2 text-muted-foreground">Scroll Down</span>
+        <Link href="#about" className="flex flex-col items-center text-sm">
+          <span className=" text-muted-foreground">Scroll Down</span>
           <ArrowDown size={20} className="animate-bounce" />
-        </a>
+        </Link>
       </motion.div>
     </div>
   );
