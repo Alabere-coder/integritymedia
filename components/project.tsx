@@ -32,13 +32,13 @@ const projects = [
     githubLink: "https://github.com/Alabere-coder/agenda",
   },
   {
-    title: "Content Management System",
+    title: "Bliss-Enterprise E-commerce",
     description:
-      "Custom CMS with intuitive interface and advanced content organization.",
+      "A full-featured ecommerce platform built with Next.js, featuring product listings, shopping cart, user authentication, and Stripe payment integration.",
     image: "/port2.jpeg",
-    tags: ["Vue.js", "GraphQL", "PostgreSQL", "AWS"],
-    liveLink: "/",
-    githubLink: "/",
+    tags: ["Next js", "Tailwind css", "TypeScript", "PostgreSQL", "Stripe"],
+    liveLink: "https://blissenterprise.vercel.app/",
+    githubLink: "https://github.com/Alabere-coder/bliss-enterprise_e-commerce",
   },
 ];
 
