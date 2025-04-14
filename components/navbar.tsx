@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between">
           <motion.a
             href="#hero"
-            className="text-xl font-medium"
+            className="text-xl text-[#9b87f5] font-extrabold"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >

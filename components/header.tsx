@@ -39,7 +39,7 @@ const Header = () => {
         transition={{ duration: 1.2, ease: "easeOut" }}
       >
         <motion.div
-          className="max-sm:h-80 max-sm:w-80 h-96 w-96 rounded-full bg-[#9b87f5] blur-sm"
+          className="max-sm:h-[22rem] max-sm:w-[22rem] h-96 w-96 rounded-full bg-[#9b87f5] blur-sm"
           animate={{
             scale: [1, 1.08, 1],
           }}
@@ -77,7 +77,7 @@ const Header = () => {
         className="absolute"
         initial={{ scale: 0.4, opacity: 0 }}
         animate={{ scale: 1, opacity: 0.3 }}
-        transition={{ duration: 1.5, delay: 0.2, ease: "easeOut" }}
+        transition={{ duration: 1.8, delay: 0.2, ease: "easeOut" }}
       >
         <motion.div
           className="max-sm:h-48 max-sm:w-48 h-64 w-64 rounded-full bg-[#9b87f5]"
@@ -114,7 +114,7 @@ const Header = () => {
         <p className="text-neutral-500 text-lg md:text-xl max-w-2xl mx-auto mb-8">
           Crafting beautiful user interfaces and building intelligent systems
         </p>
-        <div className="flex gap-4 justify-center">
+        <div className="flex gap-4 justify-center mt-10">
           <Link href="#contact">
             <Button
               variant="secondary"
