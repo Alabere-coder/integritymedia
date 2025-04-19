@@ -134,7 +134,7 @@ const Header = () => {
       </motion.div>
 
       <motion.div
-        className="pt-8"
+        className="pt-8 absolute bottom-6 md:bottom-12 w-fit"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -145,9 +145,12 @@ const Header = () => {
           repeatDelay: 0.5,
         }}
       >
-        <Link href="#about" className="flex flex-col items-center text-sm">
+        <Link
+          href="#about"
+          className="flex flex-col items-center text-sm gap-2"
+        >
           <span className=" text-muted-foreground">Scroll Down</span>
-          <ArrowDown size={20} className="animate-bounce" />
+          <ArrowDown size={20} className="animate-bounce text-[#9b87f5]" />
         </Link>
       </motion.div>
     </div>
