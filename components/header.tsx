@@ -147,14 +147,14 @@ const Header = () => {
       >
         <Link
           href="#about"
-          className="flex flex-col items-center text-sm gap-2"
+          className=" flex flex-col items-center text-sm gap-1"
         >
-          <span className=" text-muted-foreground">Scroll Down</span>
+          <span className="absolute w-20 bottom-10 md:bottom-12 text-muted-foreground">Scroll Down</span>
           <ArrowDown size={20} className="animate-bounce text-[#9b87f5]" />
         </Link>
       </motion.div>
     </div>
   );
-};
+}
 
 export default Header;
