@@ -10,7 +10,7 @@ import { ArrowDown } from "lucide-react";
 const Header = () => {
   return (
     <div className="relative w-full h-screen flex flex-col items-center justify-center gap-10">
-      {/* <motion.div
+      <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9 }}
@@ -30,7 +30,7 @@ const Header = () => {
             />
           </div>
         </motion.div>
-      </motion.div> */}
+      </motion.div>
 
       <motion.div
         className="absolute"
@@ -124,35 +124,18 @@ const Header = () => {
             </Button>
           </Link>
 
+          <a href="/resume">
           <Button
             variant="secondary"
             className="border border-neutral-300 hover:border-[#9b87f5] text-neutral-700 rounded-lg transition-colors duration-200"
           >
-            Download Resume
+            View Resume
           </Button>
+        </a>
         </div>
       </motion.div>
 
-      <motion.div
-        className="pt-8 absolute bottom-6 md:bottom-12 w-fit"
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          duration: 0.8,
-          delay: 0.7,
-          repeat: Infinity,
-          repeatType: "reverse",
-          repeatDelay: 0.5,
-        }}
-      >
-        <Link
-          href="#about"
-          className=" flex flex-col items-center text-sm gap-1"
-        >
-          <span className="absolute w-20 bottom-10 md:bottom-12 text-muted-foreground">Scroll Down</span>
-          <ArrowDown size={20} className="animate-bounce text-[#9b87f5]" />
-        </Link>
-      </motion.div>
+      {/* Scroll Down Indicator */}
     </div>
   );
 }

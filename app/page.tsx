@@ -34,7 +34,7 @@ export default function Home() {
   }, [isLoading]);
 
   return (
-    <div className=" min-h-screen flex flex-col sm:items-start">
+    <div className=" min-h-screen flex flex-col sm:items-start bg-background">
       <AnimatePresence>
         {isLoading && (
           <LoadingScreen onLoadingComplete={handleLoadingComplete} />

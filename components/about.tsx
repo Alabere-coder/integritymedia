@@ -49,7 +49,7 @@ const About: React.FC = () => {
             Passionate about creating impactful digital solutions
           </h2> */}
           <p className="text-muted-foreground max-w-3xl mx-auto">
-            I am a passionate developer, that loves building open source
+            I am a passionate software developer, that loves building open source
             applications for the general developer society. With expertise in
             both frontend development and artificial intelligence, I enjoy
             building interactive and superb UIs that are highly efficient,
