@@ -1,22 +1,22 @@
-"use client";
+"use client"
 
-import { X } from "lucide-react";
-import Link from "next/link";
-import React, { useEffect, useState } from "react";
-import { Button } from "./ui/button";
+import { X } from "lucide-react"
+import Link from "next/link"
+import { useEffect, useState } from "react"
+import { Button } from "./ui/button"
 
 const Popup = () => {
-  const [pop, setPop] = useState(false);
+  const [pop, setPop] = useState(false)
 
   useEffect(() => {
     setTimeout(() => {
-      setPop(true);
-    }, 50000);
-  }, []);
+      setPop(true)
+    }, 5000)
+  }, [])
 
   const handleCancel = () => {
-    setPop(false);
-  };
+    setPop(false)
+  }
   return (
     <div
       onClick={() => handleCancel()}
@@ -24,14 +24,14 @@ const Popup = () => {
         pop ? "scale-100 opacity-100" : "scale-0 opacity-0"
       }`}
     >
-      <div className="popW lg:w-[100%] w-[90%] m-auto lg:h-60 bg-neutral-200 p-6 rounded-md cursor-auto relative">
-        <h1 className="text-center lg:text-xl text-lg cursor-auto text-neutral-800">{`Do you mind saying Hi?, Let's talk business.`}</h1>
+      <div className="popW lg:w-[100%] w-[90%] m-auto lg:h-60 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-6 rounded-md cursor-auto relative border border-cyan-500/30 shadow-lg shadow-cyan-500/20">
+        <h1 className="text-center lg:text-xl text-lg cursor-auto bg-gradient-to-r from-cyan-400 via-blue-400 to-magenta-400 bg-clip-text text-transparent font-bold">{`Do you mind saying Hi?, Let's talk business.`}</h1>
         <div>
           <div
             onClick={() => handleCancel()}
-            className="cursor-pointer text-[#9b87f5] bg-white hover:border-[#9b87f5] border-2 transition-all duration-300 absolute right-0 -top-14 w-10 h-10 rounded-full flex justify-center items-center"
+            className="cursor-pointer text-cyan-400 bg-slate-800 hover:bg-slate-700 hover:border-cyan-400 border-2 border-cyan-500/50 transition-all duration-300 absolute right-0 -top-14 w-10 h-10 rounded-full flex justify-center items-center shadow-lg shadow-cyan-500/30"
           >
-            <X className="text-[#9b87f5] font-extrabold" size={28} />
+            <X className="text-cyan-400 font-extrabold" size={28} />
           </div>
 
           <div className="whatsapp flex mt-12 justify-center items-center">
@@ -43,7 +43,7 @@ const Popup = () => {
             >
               <Button
                 variant="secondary"
-                className="bg-[#9b87f5] font-bold text-white hover:text-green-600 rounded-md absolute w-full h-full grid place-content-center"
+                className="bg-gradient-to-r from-cyan-500 to-blue-500 font-bold text-slate-900 hover:from-cyan-400 hover:to-blue-400 rounded-md absolute w-full h-full grid place-content-center shadow-lg shadow-cyan-500/40 hover:shadow-cyan-500/60 transition-all duration-300"
               >
                 WhatsApp
               </Button>
@@ -58,7 +58,7 @@ const Popup = () => {
             >
               <Button
                 variant="secondary"
-                className="bg-[#9b87f5] font-bold text-white hover:text-sky-600 rounded-md absolute w-full h-full grid place-content-center"
+                className="bg-gradient-to-r from-purple-300 to-purple-500 font-bold text-slate-900 hover:from-magenta-400 hover:to-pink-400 rounded-md absolute w-full h-full grid place-content-center shadow-lg shadow-magenta-500/40 hover:shadow-magenta-500/60 transition-all duration-300"
               >
                 Email Me
               </Button>
@@ -67,7 +67,7 @@ const Popup = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Popup;
+export default Popup
