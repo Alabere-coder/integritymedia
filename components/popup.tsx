@@ -11,7 +11,7 @@ const Popup = () => {
   useEffect(() => {
     setTimeout(() => {
       setPop(true)
-    }, 5000)
+    }, 50000)
   }, [])
 
   const handleCancel = () => {

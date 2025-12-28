@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
     <motion.header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         isScrolled
-          ? "bg-gradient-to-b from-black/20 via-black/80 to-transparent backdrop-blur-md border-b border-cyan-500/30 shadow-[0_0_20px_rgba(0,255,255,0.1)]"
+          ? "bg-black/70 backdrop-blur-md border-b border-neutral-100 shadow-[0_0_20px_rgba(0,255,255,0.1)]"
           : "bg-transparent border-b border-transparent"
       }`}
       initial={{ y: -100, opacity: 0 }}
@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <motion.a
-            href="#hero"
+            href="#"
             className="text-xl font-extrabold bg-gradient-to-r from-cyan-400 via-blue-500 to-cyan-400 bg-clip-text text-transparent drop-shadow-lg"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
@@ -85,7 +85,7 @@ const Navbar: React.FC = () => {
 
       {mobileMenuOpen && (
         <motion.div
-          className="md:hidden absolute top-full left-0 right-0 bg-gradient-to-b from-black/80 to-black/60 backdrop-blur-md border-b border-cyan-500/30 shadow-[0_0_20px_rgba(0,255,255,0.15)]"
+          className="md:hidden absolute top-full left-0 right-0 bg-gradient-to-b from-black/80 to-black/60 backdrop-blur-md border-b border-cyan-500/30 shadow-[0_0_20px_rgba(0,255,255,0.1)]"
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: "auto" }}
           exit={{ opacity: 0, height: 0 }}

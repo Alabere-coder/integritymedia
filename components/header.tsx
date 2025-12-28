@@ -128,7 +128,7 @@ const Header: React.FC = () => {
         {/* Description */}
         <motion.p
           variants={itemVariants}
-          className="text-muted-foreground text-lg md:text-xl max-w-2xl leading-relaxed"
+          className="text-muted-foreground text-sm md:text-xl max-w-2xl leading-relaxed"
         >
           Crafting{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-300 font-medium">
