@@ -111,8 +111,8 @@ const Header: React.FC = () => {
         </motion.div>
 
         {/* Title with icons */}
-        <motion.div variants={itemVariants} className="flex flex-col items-center mt-4 gap-4">
-          <div className="flex items-center gap-4 flex-wrap justify-center">
+        <motion.div variants={itemVariants} className="flex flex-row items-center md:mt-4 gap-4">
+          <div className="flex items-center gap-2 md:gap-4 flex-wrap justify-center">
             <div className="flex items-center gap-2 glass bg-neutral-800 px-4 py-2 rounded-full">
               <Code2 className="w-5 h-5 text-cyan-400" />
               <span className="text-white font-medium">Frontend</span>
@@ -143,7 +143,7 @@ const Header: React.FC = () => {
         {/* CTA Buttons */}
         <motion.div
           variants={itemVariants}
-          className="flex flex-col sm:flex-row gap-4 mt-4"
+          className="flex flex-row gap-4 mt-4"
         >
           <Link href="#contact">
             <Button
@@ -169,7 +169,7 @@ const Header: React.FC = () => {
         </motion.div>
 
         {/* Suggestion 2: Semantic HTML for Stats */}
-        <motion.ul variants={itemVariants} className="flex items-center gap-8 mt-8 text-gray-400 text-sm">
+        <motion.ul variants={itemVariants} className="flex items-center gap-8 md:mt-8 text-gray-400 text-sm">
           <li className="flex flex-col items-center">
             <span className="text-2xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">
               2+
