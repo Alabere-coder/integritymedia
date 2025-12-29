@@ -169,7 +169,7 @@ const Header: React.FC = () => {
         </motion.div>
 
         {/* Suggestion 2: Semantic HTML for Stats */}
-        <motion.ul variants={itemVariants} className="flex items-center gap-8 md:mt-8 text-gray-400 text-sm">
+        <motion.ul variants={itemVariants} className="flex items-center gap-4 md:gap-8 md:mt-8 text-gray-400 text-sm">
           <li className="flex flex-col items-center">
             <span className="text-2xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">
               2+
@@ -197,7 +197,7 @@ const Header: React.FC = () => {
 
       {/* Scroll indicator */}
        <motion.div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+        className="absolute bottom-16 md:bottom-8 left-1/2 -translate-x-1/2"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 2, duration: 0.8 }}

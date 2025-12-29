@@ -45,7 +45,7 @@ const BackToTopButton: React.FC = () => {
             onClick={scrollToTop}
             variant="default"
             size="icon"
-            className="rounded-full shadow-lg h-12 w-12 bg-[#9b87f5] hover:bg-[#9b87f5]/90"
+            className="rounded-full shadow-lg h-12 w-12 bg-gradient-to-br from-[#0a0f1f] via-[#112240] to-[#1b3a5f] hover:bg-[#9b87f5]/90"
             aria-label="Back to top"
           >
             <ChevronUp className="h-6 w-6 font-black" />
