@@ -13,12 +13,15 @@ import Footer from "@/components/footer";
 import BackToTopButton from "@/components/goto";
 import Skills from "@/components/skills";
 import CurrentProject from "@/components/current-project";
+import { useAppLoaded } from "@/lib/useAppLoad"
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
+  const { hasLoaded, markLoaded } = useAppLoaded()
 
   const handleLoadingComplete = () => {
     setIsLoading(false);
+    markLoaded()
   };
 
   useEffect(() => {

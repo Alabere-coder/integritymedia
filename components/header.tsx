@@ -179,7 +179,7 @@ const Header: React.FC = () => {
           <li className="w-px h-10 bg-gradient-to-b from-cyan-500/50 to-magenta-500/50" aria-hidden="true" />{" "}
           {/* Vibrant gradient divider */}
           <li className="flex flex-col items-center">
-            <span className="text-2xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-200 to-pink-400">
+            <span className="text-2xl font-display font-bold text-transparent bg-clip-text bg-purple-400">
               50+
             </span>
             <span className="text-gray-500">Projects</span>
@@ -187,7 +187,7 @@ const Header: React.FC = () => {
           <li className="w-px h-10 bg-gradient-to-b from-cyan-500/50 to-magenta-500/50" aria-hidden="true" />{" "}
           {/* Vibrant gradient divider */}
           <li className="flex flex-col items-center">
-            <span className="text-2xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-cyan-400">
+            <span className="text-2xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">
               100%
             </span>
             <span className="text-gray-500">Passion</span>
