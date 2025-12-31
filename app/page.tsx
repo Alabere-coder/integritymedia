@@ -20,7 +20,7 @@ export default function Home() {
   const { hasLoaded, markLoaded } = useAppLoaded()
 
   const handleLoadingComplete = () => {
-    setIsLoading(true);
+    setIsLoading(false);
     markLoaded()
   };
 
